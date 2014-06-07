@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>index</title>
+<link rel="stylesheet" href="assets/css/main.css" type="text/css" media="all">
+<link href="imageMenu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/mootools.js"></script>
+<script type="text/javascript" src="assets/js/imageMenu.js"></script>
+</head>
+<body>
+<div id="container">
+    <h2 class="imagemenu"></h2>
+    <div id="example">
+        <div id="imageMenu">
+            <ul>
+                <li class="login"><a href="user_login.html" target="_self">用户登录</a></li>
+                <li class="com_login"><a href="com_login.html" target="_blank">比赛方登录</a></li>
+                <li class="without_login"><a href="free_home.html" target="_blank">游客登录</a></li>
+                <li class="about_us"><a href="free_overview.html" target="_blank">关于我们</a></li>
+                <li class="overview"><a href="#" target="_blank">比赛剪影</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+			
+			window.addEvent('domready', function(){
+				var myMenu = new ImageMenu($$('#imageMenu a'),{openWidth:310, border:2, onOpen:function(e,i){window.open(e);}});
+			});
+		</script> 
+    </div>
+</div>
+</body>
+</html>
